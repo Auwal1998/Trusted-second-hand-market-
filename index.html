@@ -1,29 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Trusted Secondhand Market (TSM Nigeria)</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trusted Secondhand Market (TSM Nigeria)</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+}
+
+header{
+background:#0a8f3d;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#066d2c;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+.hero{
+padding:40px 20px;
+text-align:center;
+background:white;
+}
+
+.hero h1{
+color:#0a8f3d;
+}
+
+.btn{
+display:inline-block;
+background:#0a8f3d;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+margin-top:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+</style>
+
 </head>
 
 <body>
 
+<header>
 <h1>Trusted Secondhand Market (TSM Nigeria)</h1>
+<p>Buy • Sell • VTU • Bill Payments</p>
+</header>
 
-<p>Welcome to TSM Nigeria.</p>
-<p>Buy and sell trusted secondhand products across Nigeria.</p>
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">VTU</a>
+<a href="#">Login</a>
+<a href="#">Register</a>
+</nav>
 
-<h2>Our Services</h2>
+<section class="hero">
+<h1>Welcome to TSM Nigeria</h1>
+<p>The trusted marketplace for buying and selling secondhand products across Nigeria.</p>
 
-<ul>
-    <li>Buy & Sell Products</li>
-    <li>VTU (Airtime & Data)</li>
-    <li>Bill Payments</li>
-    <li>Verified Sellers</li>
-</ul>
+<a href="#" class="btn">Start Shopping</a>
+</section>
 
-<button onclick="welcomeMessage()">Click Me</button>
+<section class="services">
 
-<script src="script.js"></script>
+<div class="card">
+<h3>🛒 Buy & Sell</h3>
+<p>Trade safely with verified users.</p>
+</div>
+
+<div class="card">
+<h3>📱 VTU</h3>
+<p>Buy Airtime and Data instantly.</p>
+</div>
+
+<div class="card">
+<h3>💡 Bills</h3>
+<p>Pay electricity and TV subscriptions.</p>
+</div>
+
+<div class="card">
+<h3>✅ Verified Sellers</h3>
+<p>Only trusted sellers get verified.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Trusted Secondhand Market (TSM Nigeria)
+</footer>
 
 </body>
 </html>
